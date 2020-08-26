@@ -6,8 +6,11 @@ import json
 with open('./champion_ko_KR.json', 'r', encoding='UTF-8') as f:
     json_dict = json.load(f)
 
-print(json_dict)
+print(type(json_dict))
+champ_data = json_dict['data']
+#print(champ_data)
+champ_list = []
+for value in champ_data.keys():
+    champ_list.append(value)
 
-
-for author in json_dict['data']:
-    print(json_dict['name'])
+print(champ_list)
