@@ -10,8 +10,6 @@ krdata = request.urlopen(ko_KR_data).read()
 
 with open(usdata, mode="wb") as f:
     f.write(usdata)
-    print("저장되었습니다.")
 
 with open(krdata, mode="wb") as f:
     f.write(usdata)
-    print("저장되었습니다.")
